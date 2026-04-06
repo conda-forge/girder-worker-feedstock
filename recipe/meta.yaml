@@ -1,5 +1,5 @@
 {% set name = "girder-worker" %}
-{% set version = "5.0.0" %}
+{% set version = "5.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/girder_worker-{{ version }}.tar.gz
-  sha256: ab4be70936a4f930fc283ed1e0122423fef865d00b9b783c17bf563090f88234
+  sha256: 7f7c5346ac82259a09d6c1e15442d3ae16ea0787f2b88ba716716e5b76a4a0ca
 
 build:
   noarch: python
