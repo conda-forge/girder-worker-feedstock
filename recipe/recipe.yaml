@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: girder-worker
-  version: "5.0.10"
+  version: "5.0.12"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/girder_worker-${{ version }}.tar.gz
-  sha256: ee8f4bc878c986745009743c15a854fe6befebd535cc12bd2f970366f0e597b4
+  sha256: 6297295bce16fff9064b9acad924c274131ef22d556e8e50498272cf7cca88c8
 
 build:
   number: 0
