@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: girder-worker
-  version: "5.0.12"
+  version: 5.0.13
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/girder_worker-${{ version }}.tar.gz
-  sha256: 6297295bce16fff9064b9acad924c274131ef22d556e8e50498272cf7cca88c8
+  sha256: 38b047a873dbca64dfe8480268d586bd081dc421a52fe8af93933198462308d3
 
 build:
   number: 0
@@ -36,8 +36,6 @@ requirements:
     - stevedore
     - jsonpickle
     - docker-py >=2.6.0
-    - cffi >2
-
 tests:
   - python:
       imports:
