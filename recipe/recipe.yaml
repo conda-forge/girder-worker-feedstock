@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: girder-worker
-  version: 5.0.13
+  version: "5.0.14"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/girder_worker-${{ version }}.tar.gz
-  sha256: 38b047a873dbca64dfe8480268d586bd081dc421a52fe8af93933198462308d3
+  sha256: f591dd5dd0d68f0ccfe20a66076d181cebcab761ba76788b472f780249ff47ad
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: SETUPTOOLS_SCM_PRETEND_VERSION=${{ version }} ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
